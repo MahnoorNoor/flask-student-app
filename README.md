@@ -1,52 +1,52 @@
-# 🎓 Flask Student Management App
+### 📚 Flask Student Management App
+This is a simple web application built using Flask and SQLite that performs basic CRUD operations for managing student records.
 
-This is a simple web application built with **Flask** that allows users to **add, view, update, and delete student records**. It uses **SQLite** as a backend database and **SQLAlchemy** as the ORM.
+### 🚀 Features
+Add new students
 
----
+View all student records
 
-## 📋 Features
+Update student information
 
-- ✅ Add new student records (First Name, Last Name, Age, City)
-- 🧾 View a list of all students
-- 🔁 Update existing student information
-- ❌ Delete a student record
+Delete student records
 
----
+### 🛠️ Technologies Used:
+Python
 
-## 🛠 Technologies Used
+Flask
 
-- **Python**
-- **Flask** – Lightweight web framework
-- **Flask-SQLAlchemy** – ORM for interacting with SQLite
-- **HTML + Jinja2** – For frontend templates
+Flask SQLAlchemy
 
----
+SQLite
 
-## 📁 Project Structure
+HTML (Jinja2 templates)
 
-FlaskStudentApp/
-├── app.py # Main Flask application
+### 📂 Project Structure
+
+FlaskApp/
+│
+├── app.py                   # Main Flask app
 ├── templates/
-│ ├── index.html # Homepage with add form & student table
-│ └── update.html # Form to update student record
-├── requirements.txt # Project dependencies
-└── .gitignore # Files and folders to ignore in Git
+│   ├── index.html           # Main page for displaying and adding students
+│   └── update.html          # Page to update student data
+├── .venv/                   # Python virtual environment
+└── firstapp.db              # SQLite database (auto-generated)
+### ⚙️ Setup Instructions
+### Clone the repository:
 
-## ▶️ Getting Started
+git clone https://github.com/your-username/FlaskApp.git
+cd FlaskApp
 
-### 1. Clone the Repository
+### Set up a virtual environment (optional but recommended):
+python -m venv venv
+source venv/bin/activate    # On Windows: venv\Scripts\activate
 
+### Install dependencies:
+pip install flask flask_sqlalchemy
 
-git clone https://github.com/yourusername/flask-student-app.git
-cd flask-student-app
-
-### 2. Install Dependencies
-
-pip install -r requirements.txt
-
-### 3. Run the App
-
+### Run the application:
 python app.py
 
-The app will be available at:
-👉 http://127.0.0.1:5000/
+### Visit the app in your browser:
+
+http://127.0.0.1:5000/
